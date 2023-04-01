@@ -67,5 +67,3 @@ Para evaluar la precisión de cada modelo, se utilizará el modelo que mejor ten
 - Scikit-learn: utilizada para la implementación de los modelos de machine learning, selección de características y evaluación del rendimiento de los modelos.
 
 - Pickle: utilizada para guardar el modelo final entrenado y su uso posterior para hacer predicciones en nuevos datos.
-
-- 
