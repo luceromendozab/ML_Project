@@ -38,21 +38,26 @@ Se utilizarán varios modelos de aprendizaje automático para predecir los preci
 ## Evaluación 
 Para evaluar la precisión de cada modelo, se utilizará el modelo que mejor tenga el MSE.
 
-- Error cuadrático medio (MSE): una medida de la diferencia entre las predicciones del modelo y los valores reales. Cuanto menor sea el MSE, mejor será el modelo.
+- Error cuadrático medio (MSE): Cuanto menor sea el MSE, mejor será el modelo.
 
 ## Conclusiones
 
 - La calidad del preprocesamiento de datos es fundamental para obtener buenos resultados en el modelado. En este proyecto, la eliminación de las columnas X, Y , Z, depth% , table  y la codificación one-hot y ordinal de las variables categóricas ayudaron a mejorar la precisión de los modelos.
 
-- La gestión de outliers es importante para evitar que valores extremos en los datos distorsionen las predicciones del modelo. En este proyecto, se utilizaron técnicas como el análisis de caja para identificarlos. ??????
+- La gestión de outliers es importante para evitar que valores extremos en los datos distorsionen las predicciones del modelo. En este proyecto es normal que hayan outliers en "carat" porque diamantes de 5 quilates son muy raros y a su vez tienen un mayor precio.
 
-- La codificación ordinal asigna valores numéricos a las categorías en función de su orden natural, por lo que puede reflejar cierta relación de orden entre las categorías.????
+- En la estandarización de la variable respuesta he decidido no realizarlo, ya que los precios de los diamantes suelen estar en un rango relativamente estrecho y pueden tener una interpretación física importante. Además algunos modelos de predicción pueden manejar variables con diferentes escalas sin problemas. 
 
-- En cuanto a la codificación one-hot es una técnica útil para convertir variables categóricas en variables numéricas para su uso en modelos de aprendizaje automático. Sin embargo, puede aumentar el tamaño del conjunto de datos, lo que puede ser problemático en conjuntos de datos grandes.?????
+
+- La codificación ordinal asigna valores numéricos a las categorías en función de su orden natural, por lo que puede reflejar cierta relación de orden entre las categorías. Debido a esto lo hemos aplicado a todas nuestras variables categóricas porque tenian una influencia alta en la variable respuesta.
 
 - Se demostró que el modelo de Random Forest produjeron resultados mejores. Esto se concluyo debido a su metrica MSE que era la más baja de todas. 
 
 ![portada](https://github.com/luceromendozab/ML_Project/blob/main/images/resultados.png)
+
+- Cuando el MSE es bajo, esto significa que las predicciones del modelo están más cerca de los valores reales, lo que se interpreta como una mayor precisión del modelo en la tarea de predicción
+
+## Utilidades 
 
 - En general, este proyecto demuestra cómo la aplicación de técnicas de Machine Learning puede ser útil para predecir precios de diamantes, lo que puede ser útil para la industria joyera y para los consumidores que buscan comprar diamantes a precios justos.
 
