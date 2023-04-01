@@ -52,6 +52,8 @@ Para evaluar la precisión de cada modelo, se utilizará el modelo que mejor ten
 
 - Se demostró que el modelo de Random Forest produjeron resultados mejores. Esto se concluyo debido a su metrica MSE que era la más baja de todas. 
 
+![portada](https://github.com/Ironhack-Data-Madrid-Enero-2021/W7-Kaggle_competition/blob/main/images/PORTADA.jpg)
+
 - En general, este proyecto demuestra cómo la aplicación de técnicas de Machine Learning puede ser útil para predecir precios de diamantes, lo que puede ser útil para la industria joyera y para los consumidores que buscan comprar diamantes a precios justos.
 
 ## Librerias utilizadas 
