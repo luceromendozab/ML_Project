@@ -23,9 +23,9 @@ X, Y, Z: Las dimensiones del diamante en milímetros.
 ## Preprocesamiento de Datos
 Antes de entrenar cualquier modelo de aprendizaje automático, es necesario preprocesar los datos. En este caso, se realizarán las siguientes tareas de preprocesamiento:
 
-Eliminar las columnas X, Y y Z, ya que el peso del diamante (carat) es suficiente para representar su tamaño.
-Convertir las variables categóricas (Cut, Color y Clarity) en variables numéricas usando codificación one-hot_encoding y ordinal encoding.
+Eliminar las columnas X, Y y Z, ya que el peso del diamante (carat) es suficiente para representar su tamaño y las columnas depth y table ya que tienen una correlación muy baja con la variable respuesta. 
 
+Convertir las variables categóricas (Cut, Color y Clarity) en variables numéricas usando codificación ordinal encoding , ya que tienen un peso mayor en la variable respuesta. 
 
 ## Modelado 
 
